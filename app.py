@@ -236,7 +236,7 @@ if run:
 
             # Convert BGR to RGB for Streamlit
             rgb_frame = cv2.cvtColor(processed_frame, cv2.COLOR_BGR2RGB)
-            FRAME_WINDOW.image(rgb_frame, use_container_width=True)
+            FRAME_WINDOW.image(rgb_frame, width=640)
 
             # Update stats panel
             if results:
